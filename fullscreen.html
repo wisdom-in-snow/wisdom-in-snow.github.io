@@ -75,14 +75,5 @@
   window.onload = resize;
   window.onresize = resize;
 
-  if (screen && screen.orientation)
-    screen.orientation.onchange = () =>
-  {
-    if (screen.orientation.type.startsWith("landscape"))
-      fullscreen();
-    else
-      restore();
-  }
-
 </script>
 
